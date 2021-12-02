@@ -14,15 +14,6 @@ game:GetService'StarterGui':SetCore('SendNotification', {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/main/fordzz"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/main/fordjrz"))()
 
-local folder = Instance.new("Folder", game.StarterGui)
-    folder.Name = "Nigger"
-    local archval = Instance.new("BoolValue", folder)
-    archval.Name = "LOL"
-    local NIG = Instance.new("BoolValue", folder)
-    NIG.Name = "LOLL"
-    local troll = Instance.new("BoolValue", folder)
-    troll.Name = "LMAO"
-
 --bypassed
 
   game:GetService'StarterGui':SetCore('SendNotification', {
