@@ -2,11 +2,6 @@ local check = Instance.new("BoolValue", game)
 check.Name = "?"
 
 if game["?"].Value == false then
-game:GetService'StarterGui':SetCore('SendNotification', {
-    Title = 'Wock$tars Hub',
-    Text = 'Please wait for the gui to bypass anti cheats!',
-    Duration = 5
-  })
 
   wait(2)
   --bypass
@@ -15,13 +10,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/ma
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TahShiesty/Durango/main/fordjrz"))()
 
 --bypassed
-
-  game:GetService'StarterGui':SetCore('SendNotification', {
-    Title = 'Bypassed!',
-    Text = 'MORE BYPASSES COMING SOON!',
-    Duration = 5
-  })
-  wait(1)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Cracked by Wock$tar", "DarkTheme")
