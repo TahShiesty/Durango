@@ -1,0 +1,75 @@
+local beloroth = {}
+local cogarn = game:GetService("UserInputService")
+
+
+local function alls()
+    while wait() do
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+    
+        if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+            table.insert(beloroth, v.Character["Left Leg"]) 
+            local totouch = game:GetService("Players").LocalPlayer.Character.Head
+            local toggleon = 0 
+            local toggleoff = 1
+            firetouchinterest(v.Character["Left Leg"], totouch, toggleon)
+            firetouchinterest(v.Character["Left Leg"], totouch, toggleoff)
+        end
+end
+    end
+end
+
+
+    local function opposingteams()
+       while wait() do
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+            
+            if v.Name ~= game:GetService("Players").LocalPlayer.Name and v.Team.Name ~= game.Players.LocalPlayer.Team.Name then
+                table.insert(beloroth, v.Character["Left Leg"]) 
+                local totouch = game:GetService("Players").LocalPlayer.Character.Head
+                local toggleon = 0 
+                local toggleoff = 1
+                firetouchinterest(v.Character["Left Leg"], totouch, toggleon)
+                firetouchinterest(v.Character["Left Leg"], totouch, toggleoff)
+            end
+            end
+end
+end
+    local function myteam()
+        while wait() do
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+            
+            if v.Name ~= game:GetService("Players").LocalPlayer.Name and v.Team.Name == game.Players.LocalPlayer.Team.Name then
+                table.insert(beloroth, v.Character["Left Leg"]) 
+                local totouch = game:GetService("Players").LocalPlayer.Character.Head
+                local toggleon = 0 
+                local toggleoff = 1
+                firetouchinterest(v.Character["Left Leg"], totouch, toggleon)
+                firetouchinterest(v.Character["Left Leg"], totouch, toggleoff)
+            end
+end
+        end
+    end
+    --team
+
+
+
+
+cogarn.InputBegan:Connect(function(key, gpe)
+    if key.KeyCode == Enum.KeyCode.U and not gpe then
+        if getgenv().all == true then
+
+        alls()
+
+        else if getgenv().opposingteam == true then
+            opposingteams()
+
+        else if getgenv().yourteam == true then
+            myteam()
+            else
+            return nil
+
+        end
+    end
+        end
+    end
+end)
