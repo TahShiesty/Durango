@@ -1,0 +1,19 @@
+local UIS = game:GetService('UserInputService')
+local plr = game.Players.LocalPlayer
+local Char = plr.Character or plr.CharacterAded:Wait()
+local Key = 'R'
+UIS.InputBegan:Connect(function(Input, IsTyping)
+if IsTyping then return end
+local KeyPressed = Input.KeyCode
+if KeyPressed == Enum.KeyCode[Key] then
+    local obj = game.workspace.Map:WaitForChild("Basketball").Handle
+    local magnitude = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - obj.Position).magnitude
+  
+  if magnitude < 120 then
+    obj.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  else
+    warn("Wock$tars HUB NOTIFICATIONS - You aren't close enough to a basketball to do that.")
+
+end
+end
+end)
