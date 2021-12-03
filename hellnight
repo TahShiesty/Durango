@@ -1,0 +1,42 @@
+local function sizelarge()
+for i, v in pairs(game.Workspace:GetDescendants()) do
+    if v.Name == "HitRim1" or v.Name == "HitRim2" or v.Name == "HitRim3" or v.Name == "HitRim4" then
+
+    v.Size = Vector3.new(200, 200, 200)
+    v.CanCollide = false
+    end
+    end
+end
+
+local function sizesmall()
+    for i, v in pairs(game.Workspace:GetDescendants()) do
+        if v.Name == "HitRim1" or v.Name == "HitRim2" or v.Name == "HitRim3" or v.Name == "HitRim4" then
+    
+        v.Size = Vector3.new(5, 2, 5)
+        v.CanCollide = true
+        end
+        end
+end
+
+
+local key = 'B'
+local UIS = game:GetService("UserInputService")
+local holding = false
+UIS.InputBegan:connect(function(loser, Nigger)
+     holding = true
+    local pressed = loser.KeyCode
+    if pressed == Enum.KeyCode[key] and holding == true then
+        repeat
+            wait(1)
+        sizesmall()
+        until holding == false
+    end
+end)
+
+UIS.InputEnded:connect(function(los, nig)
+    holding = false
+    local pres = los.KeyCode
+    if pres == Enum.KeyCode[key] and holding == false then
+        sizelarge()
+    end
+end)
