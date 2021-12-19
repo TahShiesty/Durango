@@ -1,4 +1,4 @@
-local ac = {"Speeding", "Spinning Detect", "Jumping", "HipHeight", "Long Arms", "JumpPower"}
+local ac = {"Speeding", "Freeze", "Spinning Detect", "Jumping", "HipHeight", "Long Arms", "JumpPower"}
 
 local old; old = hookmetamethod(game, "__namecall", function(self, ...)
    local args = {...}
